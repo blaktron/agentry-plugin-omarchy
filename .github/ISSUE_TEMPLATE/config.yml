@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/blaktron/agentry-plugin-omarchy/blob/main/SECURITY.md
+    about: Never in a public issue. SECURITY.md has the address and what to include.
+  - name: Report a QuickAgent
+    url: https://secureagentry.net/
+    about: A QuickAgent that misbehaves is reported on its page in the registry that serves it.

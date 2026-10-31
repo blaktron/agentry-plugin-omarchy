@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "net.secureagentry.agentry",
+  "name": "Agentry",
+  "version": "0.1.0",
+  "author": "Agentry",
+  "license": "MIT",
+  "description": "Your QuickAgents in the Omarchy bar: see what is installed and scheduled on this computer, run one, and check that the machine is ready.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Agentry",
+    "description": "Account, readiness, installed QuickAgents with a Run button each, and schedules, read from the Agentry CLI.",
+    "category": "AI",
+    "aliases": [
+      "agentry",
+      "quickagents"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "refreshIntervalSec": 300,
+      "agentryBin": "",
+      "registry": ""
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 30,
+        "max": 3600,
+        "step": 30,
+        "defaultValue": 300
+      },
+      {
+        "key": "agentryBin",
+        "type": "string",
+        "label": "Agentry CLI path",
+        "defaultValue": "",
+        "description": "Leave empty to use the agentry your login shell finds on PATH."
+      },
+      {
+        "key": "registry",
+        "type": "string",
+        "label": "Registry URL",
+        "defaultValue": "",
+        "description": "Leave empty for the CLI's default registry."
+      }
+    ]
+  }
+}
