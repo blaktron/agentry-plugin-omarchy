@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "net.secureagentry.agentry",
   "name": "Agentry",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "author": "Agentry",
   "license": "MIT",
   "description": "Your QuickAgents in the Omarchy bar: see what is installed and scheduled on this computer, run one, and check that the machine is ready.",
